@@ -17,7 +17,9 @@ http://localhost:5001/score?petal_length=5.0&petal_width=2.0&sepal_length=3.5&se
 
 ### loading image to dockerhub
 docker login -u <your_docker_id> --password <your_docker_password>
+
 docker build -t <your_docker_id>/<image_name>:<image_version>
+
 docker push <your_docker_id>/<image_name>
 
 #### see image at 
