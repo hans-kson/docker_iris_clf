@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        form {
+            margin: auto;
+            width: 35%;
+        }
+        
+        .result {
+            margin: auto;
+            width: 35%;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align:center;
+        }
+    </style>
+   
+    <head>
+        <title>Simple Machine Learning Iris clf</title>
+    </head>
+    
+    <body>
+        <h1> Simple Iris clf inputs  </h1>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Petal Length: <input type="decimal" name="petal_length", placeholder="Enter petal length in cm" required/>
+            <br><br>
+            Petal Width: <input type="decimal" name="petal_width", placeholder="Enter petal width in cm" required/>
+            <br><br>
+            Sepal Length: <input type="decimal" name="sepal_length", placeholder="Enter sepal length in cm" required/>
+            <br><br>
+            Sepal Width: <input type="decimal" name="sepal_width", placeholder="Enter sepal width in cm" required/>
+            <br><br>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <h1> Predicted Species  </h1>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+
+    
+</html>
